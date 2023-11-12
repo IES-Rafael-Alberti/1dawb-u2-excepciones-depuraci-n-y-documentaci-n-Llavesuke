@@ -1,7 +1,8 @@
 def Ask_User():
-    number = None
-    if type(number) == float:
-        raise ValueError()
+    """Ask the user for an input
+
+    Ask the user for an input but it cant be a float
+    """
     
     try:
         number = int(input('Numero -> '))

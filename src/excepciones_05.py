@@ -1,5 +1,13 @@
 
 def Ask_Password(password):
+    """If the user password is different from as the one saved, raise NameError
+
+    Args:
+        password (str): The password introduced by the user.
+
+    Raises:
+        NameError: If the password and the saved one are not the same. 
+    """
     
     saved_password = 'contraseña'
 

@@ -15,6 +15,9 @@ def impar(number:int) -> str:
     Results:
 
         impares (str): the string with the odd numbers. 
+
+    Raises:
+        ValueError: If the name is below 0.
     """
     if number < 0:
             raise ValueError('Introduce un numero positivo')

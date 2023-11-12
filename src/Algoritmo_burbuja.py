@@ -2,8 +2,10 @@
 a = [8,3,1,19,14]
 
 def algoritmo():
-    """Order a list
+    """Order a list from lower to higher.
     
+    Returns:
+        a (list[int]): The new list with the new order.
     """
     total = len((a))
 

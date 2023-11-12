@@ -10,6 +10,17 @@ Deberá solicitar el número hasta introducir uno correcto.
 from src.excepciones_01 import Ask_User
 
 def Count(number:int) -> str:
+    """Count until the number placed.
+
+    Args:
+        number (int): The user input
+    
+    Returns:
+        lista (str): The list of numbers, separated by comma.
+
+    Raises:
+        ValueError: The number is below zero.
+    """
     if number < 0:
             raise ValueError()
     
