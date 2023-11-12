@@ -5,8 +5,8 @@ from src.excepciones_03 import Count
 @pytest.mark.parametrize(
     ('number, expected'),
     
-    [(5,'1,3,5'),
-     (8,'1,3,5,7')
+    [(5,'5,4,3,2,1,0'),
+     (8,'8,7,6,5,4,3,2,1,0')
      ]
 )
 def test_Counts_params(number,expected):

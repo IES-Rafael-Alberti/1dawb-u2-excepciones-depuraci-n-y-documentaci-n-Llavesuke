@@ -2,6 +2,9 @@
 a = [8,3,1,19,14]
 
 def algoritmo():
+    """Order a list
+    
+    """
     total = len((a))
 
 
@@ -11,11 +14,12 @@ def algoritmo():
                 exchange = a[j]
                 a[j] = a[j+1]
                 a[j+1] = exchange
-                print(a)
+
+    return a
         
 
 def main():
-    algoritmo()
+    print(algoritmo())
 
 if __name__ == "__main__":
     main()

@@ -7,18 +7,7 @@ desde ese número hasta cero separados por comas.
 Deberá solicitar el número hasta introducir uno correcto. 
 """
 
-def Ask_User():
-    number = None
-
-    while number == None:
-        try:
-            number = int(input('Introduce un numero -> '))
-
-            return number
-        
-        except ValueError:
-            print('-Número no válido-')
-
+from src.excepciones_01 import Ask_User
 
 def Count(number:int) -> str:
     if number < 0:

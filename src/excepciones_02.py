@@ -4,22 +4,18 @@ Ejercicio 2.3.2
 Escribir un programa que pida al usuario un número entero positivo 
 y muestre por pantalla todos los números impares desde 1 hasta ese número separados por comas.
 """
-def Ask_User():
-    """Ask the user for an input
-    """
-    age = None
-
-    while age == None:
-        try:
-            age = int(input('Edad -> '))
-
-            return age
-        
-        except ValueError:
-            print('-Número no válido-')
-        
+from src.excepciones_01 import Ask_User
 
 def impar(number:int) -> str:
+    """Show the odds between the number gave by the user.
+
+    Args:
+        number (int): The input of the user
+
+    Results:
+
+        impares (str): the string with the odd numbers. 
+    """
     if number < 0:
             raise ValueError('Introduce un numero positivo')
     
